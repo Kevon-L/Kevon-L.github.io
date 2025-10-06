@@ -3,26 +3,28 @@ background: coral;
 font-family: Times New Roman, Helvetica, serif;
 }
 h1 {
-color: navy blue;
+color: navy;
 text-align: center;
 }
 
 .about{
 font-family: Times New Roman, Helvetica, serif;
-color: navy blue;
+color: navy;
+
 }
 
 .skills{
 font-family: Times New Roman, Helvetica, serif;
-color: navy blue;
+color: navy;
 }
 
 .projects{
 font-family: Times New Roman, Helvetica, serif;
-color: navy blue;
+color: navy;
 }
 
 .contact{
 font-family: Times New Roman, Helvetica, serif;
-color: navy blue;
+color: navy;
 }
+
