@@ -1,8 +1,28 @@
 body {
 background: coral;
-font-family: Arial, Helvetica, sans-serif;
+font-family: Times New Roman, Helvetica, serif;
 }
 h1 {
-color: snow;
+color: navy blue;
 text-align: center;
+}
+
+.about{
+font-family: Times New Roman, Helvetica, serif;
+color: navy blue;
+}
+
+.skills{
+font-family: Times New Roman, Helvetica, serif;
+color: navy blue;
+}
+
+.projects{
+font-family: Times New Roman, Helvetica, serif;
+color: navy blue;
+}
+
+.contact{
+font-family: Times New Roman, Helvetica, serif;
+color: navy blue;
 }
