@@ -1,64 +1,113 @@
+/* --- Base --- */
 body {
-background: coral;
-font-family: Times New Roman, Helvetica, serif;
+  background: coral;
+  font-family: "Times New Roman", Helvetica, serif;
+  margin: 0;
+  padding: 20px;
+  color: navy;
 }
+
+/* center page & constrain width */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
 h1 {
-color: navy;
-text-align: center;
+  color: navy;
+  text-align: center;
+  margin: 0 0 8px 0;
 }
 
-.about{
-font-family: Times New Roman, Helvetica, serif;
-color: navy;
-
+.contact {
+  font-size: 0.95rem;
+  text-align: center;
+  color: navy;
+  margin-bottom: 8px;
 }
 
-.skills{
-font-family: Times New Roman, Helvetica, serif;
-color: navy;
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 12px 0 20px 0;
 }
 
-.contact{
-font-family: Times New Roman, Helvetica, serif;
-color: navy;
-}
-
-.projects { display:flex; flex-wrap:wrap; }/* condensed to save space */
-display:flex;
-flex-wrap:wrap;
-font-family: Times New Roman, Helvetica, serif;
-color: navy;
-.project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: white; /* pick a color */
-border-radius: 25%;
-}
-
-.project img{
-width: 300px;
-height: 300px;
-margin: 10px;
-border: 2px solid rgb(126, 14, 201); /* choose a color */
-display: block;
-margin: auto;
-}
-
-a { /* change the appearance of ALL links */
-text-decoration: none;
-color: purple;
-}
-.project p { /* change the appearance of paragraph tags inside .project divs */
-text-align: center;
-margin: 15px;
-}
-
+/* Sections */
 .section {
-  margin-bottom: 20px; /* adds space between GPA and Experience */
+  margin-bottom: 20px;
 }
 
+.section-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.section-content {
+  line-height: 1.4;
+  color: #0b2540;
+}
+
+/* Align city and date */
+.edu-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+}
+
+/* List spacing */
 .section-content ul {
-  margin-top: 5px; /* reduces the gap before bullet points */
-  margin-bottom: 0; /* optional: removes extra space after list */
+  margin-top: 6px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+/* Project card styles (if used) */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project {
+  width: 30%;
+  min-width: 180px;
+  margin: 10px 0;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid rgb(126, 14, 201);
+  border-radius: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+.project p {
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+/* Responsive tweak */
+@media (max-width: 520px) {
+  .edu-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .project { width: 100%; }
 }
