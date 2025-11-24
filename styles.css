@@ -53,3 +53,12 @@ color: purple;
 text-align: center;
 margin: 15px;
 }
+
+.section {
+  margin-bottom: 20px; /* adds space between GPA and Experience */
+}
+
+.section-content ul {
+  margin-top: 5px; /* reduces the gap before bullet points */
+  margin-bottom: 0; /* optional: removes extra space after list */
+}
